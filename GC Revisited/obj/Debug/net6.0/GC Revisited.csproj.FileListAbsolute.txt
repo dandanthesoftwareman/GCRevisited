@@ -1,0 +1,15 @@
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\bin\Debug\net6.0\GC Revisited.exe
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\bin\Debug\net6.0\GC Revisited.deps.json
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\bin\Debug\net6.0\GC Revisited.runtimeconfig.json
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\bin\Debug\net6.0\GC Revisited.dll
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\bin\Debug\net6.0\GC Revisited.pdb
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.csproj.AssemblyReference.cache
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.AssemblyInfoInputs.cache
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.AssemblyInfo.cs
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.csproj.CoreCompileInputs.cache
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.dll
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\refint\GC Revisited.dll
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.pdb
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\GC Revisited.genruntimeconfig.cache
+C:\Users\17346\Desktop\Misc Projects\GC Revisited\GC Revisited\obj\Debug\net6.0\ref\GC Revisited.dll
