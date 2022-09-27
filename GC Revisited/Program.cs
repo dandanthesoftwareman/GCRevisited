@@ -419,9 +419,18 @@
 
 //exercise 16
 
-string asterisks = "*";
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine(asterisks);
-    asterisks += "*";
-}
+//string asterisks = "*";
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine(asterisks);
+//    asterisks += "*";
+//}
+
+//exercise 17
+
+//string asterisks = " *";
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine(asterisks);
+//    asterisks += " *";
+//}
