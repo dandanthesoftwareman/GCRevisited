@@ -288,31 +288,65 @@
 
 //exercise 12
 
-bool runProgram = true;
-while (runProgram)
-{
-    for (int i = 9; i >= 0; i--)
-    {
-        Console.WriteLine(i);
-    }
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue? (y/n)");
-        string response = Console.ReadLine();
-        if (response.Trim().ToLower() == "y")
-        {
-            break;
-        }
-        else if (response.Trim().ToLower() == "n")
-        {
-            Console.WriteLine("Goodbye!");
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("please enter (y/n)");
-        }
-    }
+//bool runProgram = true;
+//while (runProgram)
+//{
+//    for (int i = 9; i >= 0; i--)
+//    {
+//        Console.WriteLine(i);
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
 
-}
+//}
+
+//excercise 13
+
+//bool runProgram = true;
+//while (runProgram)
+//{
+//    Console.WriteLine("Please enter a whole number");
+//    int number = int.Parse(Console.ReadLine());
+
+//    for (int i = number; i >= 0; i--)
+//    {
+//        Console.WriteLine(i);
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+
+//}
