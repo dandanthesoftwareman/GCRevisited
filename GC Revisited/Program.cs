@@ -257,7 +257,31 @@
 
 //exercise 11
 
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine(i);
-}
+//bool runProgram = true;
+//while(runProgram)
+//{
+//    for (int i = 0; i < 10; i++)
+//    {
+//        Console.WriteLine(i);
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+    
+//}
