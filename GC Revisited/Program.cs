@@ -543,3 +543,54 @@
 //        }
 //    }
 //}
+
+//exercise 21
+
+bool runProgram = true;
+bool buildSentence = true;
+
+while (runProgram)
+{
+    string sentence = "";
+    while (true)
+    {
+        Console.WriteLine("Enter a word:");
+        string word = Console.ReadLine().Trim();
+        sentence += word + " ";
+        Console.WriteLine("Would you like to enter another word? (y/n)");
+        string response = Console.ReadLine();
+        if (response.Trim().ToLower() == "y")
+        {
+            
+            continue;
+        }
+        else if (response.Trim().ToLower() == "n")
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine("please enter (y/n)");
+        }
+
+    }
+    Console.WriteLine(sentence);
+    while (true)
+    {
+        Console.WriteLine("Would you like to continue (y/n)");
+        string response = Console.ReadLine();
+        if (response.Trim().ToLower() == "y")
+        {
+            break;
+        }
+        else if (response.Trim().ToLower() == "n")
+        {
+            runProgram = false;
+            break;
+        }
+        else
+        {
+            Console.WriteLine("please enter (y/n)");
+        }
+    }
+}
