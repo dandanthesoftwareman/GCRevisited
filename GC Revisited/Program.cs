@@ -546,51 +546,129 @@
 
 //exercise 21
 
-bool runProgram = true;
-bool buildSentence = true;
+//bool runProgram = true;
 
-while (runProgram)
-{
-    string sentence = "";
-    while (true)
-    {
-        Console.WriteLine("Enter a word:");
-        string word = Console.ReadLine().Trim();
-        sentence += word + " ";
-        Console.WriteLine("Would you like to enter another word? (y/n)");
-        string response = Console.ReadLine();
-        if (response.Trim().ToLower() == "y")
-        {
-            
-            continue;
-        }
-        else if (response.Trim().ToLower() == "n")
-        {
-            break;
-        }
-        else
-        {
-            Console.WriteLine("please enter (y/n)");
-        }
+//while (runProgram)
+//{
+//    string sentence = "";
+//    while (true)
+//    {
+//        Console.WriteLine("Enter a word:");
+//        string word = Console.ReadLine().Trim();
+//        sentence += word + " ";
+//        Console.WriteLine("Would you like to enter another word? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
 
-    }
-    Console.WriteLine(sentence);
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue (y/n)");
-        string response = Console.ReadLine();
-        if (response.Trim().ToLower() == "y")
-        {
-            break;
-        }
-        else if (response.Trim().ToLower() == "n")
-        {
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("please enter (y/n)");
-        }
-    }
-}
+//            continue;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+//    Console.WriteLine(sentence);
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+//}
+
+//exercise 22
+
+//bool runProgram = true;
+//bool verifyRange = true;
+//while (runProgram)
+//{
+//    int num1 = 0;
+//    int num2 = 0;
+//    while (true)
+//    {
+//        Console.WriteLine("enter a number");
+//        num1 = int.Parse(Console.ReadLine());
+//        Console.WriteLine("enter another number");
+//        num2 = int.Parse(Console.ReadLine());
+//        if (num1 > num2)
+//        {
+//            Console.WriteLine($"Your range is {num2}-{num1}");
+//            break;
+//        }
+//        else if (num1 < num2)
+//        {
+//            Console.WriteLine($"Your range is {num1}-{num2}");
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter two different numbers");
+//        }
+//    }
+
+//    while (verifyRange)
+//    {
+//        Console.WriteLine("Enter a number to verify it is in range");
+//        int num = int.Parse(Console.ReadLine());
+
+//        if (num1 > num2)
+//        {
+//            if (num >= num2 && num <= num1)
+//            {
+//                Console.WriteLine("Number is in range");
+//            }
+//            else
+//            {
+//                Console.WriteLine("Number is out of range");
+//            }
+//        }
+//        else if (num1 < num2)
+//        {
+//            if (num <= num2 && num >= num1)
+//            {
+//                Console.WriteLine("Number is in range");
+//            }
+//            else
+//            {
+//                Console.WriteLine("Number is out of range");
+//            }
+//        }
+//        while (true)
+//        {
+//            Console.WriteLine("Would you like to continue? (y/n)");
+//            string response = Console.ReadLine();
+//            if (response.Trim().ToLower() == "y")
+//            {
+//                break;
+//            }
+//            else if (response.Trim().ToLower() == "n")
+//            {
+//                Console.WriteLine("Goodbye!");
+//                verifyRange = false;
+//                runProgram = false;
+//                break;
+//            }
+//            else
+//            {
+//                Console.WriteLine("please enter (y/n)");
+//            }
+//        }
+//    }
+//}
