@@ -508,3 +508,38 @@
 //        }
 //    }
 //}
+
+//exercise 20
+
+//bool runProgram = true;
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter a number");
+//    int num = int.Parse(Console.ReadLine());
+//    int product = 1;
+//    for (int i = num; i >= (num - 2); i--)
+//    {
+//        product *= i;
+//    }
+//    Console.WriteLine($"The product of {num}, {num -1}, and {num -2} is {product}");
+
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+//}
