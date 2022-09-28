@@ -437,36 +437,74 @@
 
 //exercise 18
 
-bool runProgram = true;
-while (runProgram)
-{
-    Console.WriteLine("Please enter a whole number");
-    int number = int.Parse(Console.ReadLine());
-    int sum = 0;
+//bool runProgram = true;
+//while (runProgram)
+//{
+//    Console.WriteLine("Please enter a whole number");
+//    int number = int.Parse(Console.ReadLine());
+//    int sum = 0;
 
-    for (int i = 1; i <= number; i++)
-    {
-        sum += i;
-    }
-    Console.WriteLine(sum);
+//    for (int i = 1; i <= number; i++)
+//    {
+//        sum += i;
+//    }
+//    Console.WriteLine(sum);
 
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue? (y/n)");
-        string response = Console.ReadLine();
-        if (response.Trim().ToLower() == "y")
-        {
-            break;
-        }
-        else if (response.Trim().ToLower() == "n")
-        {
-            Console.WriteLine("Goodbye!");
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("please enter (y/n)");
-        }
-    }
-}
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+//}
+
+//exercise 19
+
+
+//bool runProgram = true;
+//while (runProgram)
+//{
+//    Console.WriteLine("enter a number");
+//    int num1 = int.Parse(Console.ReadLine());
+//    Console.WriteLine("enter a higher number");
+//    int num2 = int.Parse(Console.ReadLine());
+//    int sum = 0;
+//    for (int i = num1; i <= num2; i++)
+//    {
+//        sum += i;
+//    }
+//    Console.WriteLine($"The sum of all the numbers from {num1} to {num2} is {sum}");
+
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine();
+//        if (response.Trim().ToLower() == "y")
+//        {
+//            break;
+//        }
+//        else if (response.Trim().ToLower() == "n")
+//        {
+//            Console.WriteLine("Goodbye!");
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("please enter (y/n)");
+//        }
+//    }
+//}
