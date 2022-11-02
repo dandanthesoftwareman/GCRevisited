@@ -706,30 +706,63 @@
 
 //exercise 24
 
-bool runProgram = true;
+//bool runProgram = true;
 
-while (runProgram)
-{
-    Console.WriteLine("Enter some text");
-    string text = Console.ReadLine();
-    text = text.Substring(text.Length - 10, 10);
-    Console.WriteLine($"The last 10 characters are {text}");
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue? (y/n)");
-        string response = Console.ReadLine().Trim().ToLower();
-        if (response == "y")
-        {
-            break;
-        }
-        else if (response == "n")
-        {
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("Please enter y/n");
-        }
-    }
-}
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine();
+//    text = text.Substring(text.Length - 10, 10);
+//    Console.WriteLine($"The last 10 characters are {text}");
+//while (true)
+//{
+//    Console.WriteLine("Would you like to continue? (y/n)");
+//    string response = Console.ReadLine().Trim().ToLower();
+//    if (response == "y")
+//    {
+//        break;
+//    }
+//    else if (response == "n")
+//    {
+//        runProgram = false;
+//        break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Please enter y/n");
+//    }
+//}
+//}
+
+//exercise 25
+
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter a sentence");
+//    string sentence = Console.ReadLine();
+//    string[] arr = sentence.Split(' ');
+//    foreach(string s in arr)
+//    {
+//        Console.WriteLine(s);
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
