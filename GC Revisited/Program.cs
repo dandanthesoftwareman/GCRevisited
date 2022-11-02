@@ -766,3 +766,57 @@
 //        }
 //    }
 //}
+
+//exercise 26
+
+bool runProgram = true;
+
+while (runProgram)
+{
+    Console.WriteLine("Enter some text");
+    string text = Console.ReadLine().ToLower();
+    int vowels = 0;
+    foreach(char c in text)
+    {
+        if (c == 'a')
+        {
+            vowels++;
+        }
+        if(c == 'e')
+        {
+            vowels++;
+        }
+        if(c == 'i')
+        {
+            vowels++;
+        }
+        if(c == 'o')
+        {
+            vowels++;
+        }
+        if(c == 'u')
+        {
+            vowels++;
+        }
+    }
+    Console.WriteLine($"There were {vowels} vowels");
+    while (true)
+    {
+        Console.WriteLine("Would you like to continue? (y/n)");
+        string response = Console.ReadLine().Trim().ToLower();
+        if (response == "y")
+        {
+            break;
+        }
+        else if (response == "n")
+        {
+            runProgram = false;
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Please enter y/n");
+        }
+    }
+
+}
