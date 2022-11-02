@@ -692,7 +692,7 @@
 //        {
 //            break;
 //        }
-//        else if(response == "n")
+//        else if (response == "n")
 //        {
 //            runProgram = false;
 //            break;
@@ -704,3 +704,32 @@
 //    }
 //}
 
+//exercise 24
+
+bool runProgram = true;
+
+while (runProgram)
+{
+    Console.WriteLine("Enter some text");
+    string text = Console.ReadLine();
+    text = text.Substring(text.Length - 10, 10);
+    Console.WriteLine($"The last 10 characters are {text}");
+    while (true)
+    {
+        Console.WriteLine("Would you like to continue? (y/n)");
+        string response = Console.ReadLine().Trim().ToLower();
+        if (response == "y")
+        {
+            break;
+        }
+        else if (response == "n")
+        {
+            runProgram = false;
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Please enter y/n");
+        }
+    }
+}
