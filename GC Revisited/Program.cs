@@ -823,38 +823,68 @@
 
 //exercise 27
 
-bool runProgram = true;
+//bool runProgram = true;
 
-while (runProgram)
-{
-    Console.WriteLine("Enter some text");
-    string text = Console.ReadLine().ToLower();
-    int consonants = 0;
-    foreach (char c in text)
-    {
-        if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
-        {
-            consonants++;
-        }
-    }
-    Console.WriteLine($"There were {consonants} consonants");
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue? (y/n)");
-        string response = Console.ReadLine().Trim().ToLower();
-        if (response == "y")
-        {
-            break;
-        }
-        else if (response == "n")
-        {
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("Please enter y/n");
-        }
-    }
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine().ToLower();
+//    int consonants = 0;
+//    foreach (char c in text)
+//    {
+//        if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
+//        {
+//            consonants++;
+//        }
+//    }
+//    Console.WriteLine($"There were {consonants} consonants");
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
 
-}
+//}
+
+//exercise 28
+
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine().ToLower();
+//    text = text.Replace("a", "").Replace("e", "").Replace("i", "").Replace("o", "").Replace("u", "");
+//    Console.WriteLine(text);
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
