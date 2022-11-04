@@ -769,37 +769,75 @@
 
 //exercise 26
 
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine().ToLower();
+//    int vowels = 0;
+//    foreach(char c in text)
+//    {
+//        if (c == 'a')
+//        {
+//            vowels++;
+//        }
+//        if(c == 'e')
+//        {
+//            vowels++;
+//        }
+//        if(c == 'i')
+//        {
+//            vowels++;
+//        }
+//        if(c == 'o')
+//        {
+//            vowels++;
+//        }
+//        if(c == 'u')
+//        {
+//            vowels++;
+//        }
+//    }
+//    Console.WriteLine($"There were {vowels} vowels");
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+
+//}
+
+//exercise 27
+
 bool runProgram = true;
 
 while (runProgram)
 {
     Console.WriteLine("Enter some text");
     string text = Console.ReadLine().ToLower();
-    int vowels = 0;
-    foreach(char c in text)
+    int consonants = 0;
+    foreach (char c in text)
     {
-        if (c == 'a')
+        if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
         {
-            vowels++;
-        }
-        if(c == 'e')
-        {
-            vowels++;
-        }
-        if(c == 'i')
-        {
-            vowels++;
-        }
-        if(c == 'o')
-        {
-            vowels++;
-        }
-        if(c == 'u')
-        {
-            vowels++;
+            consonants++;
         }
     }
-    Console.WriteLine($"There were {vowels} vowels");
+    Console.WriteLine($"There were {consonants} consonants");
     while (true)
     {
         Console.WriteLine("Would you like to continue? (y/n)");
