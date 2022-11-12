@@ -926,19 +926,57 @@
 
 //exercise 30
 
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine();
+//    char [] reversed = text.Reverse().ToArray();
+//    string reversedText = "";
+//    foreach(char c in reversed)
+//    {
+//        reversedText += c;
+//    }
+//    Console.WriteLine(reversedText);
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
+
+//exercise 31
+
 bool runProgram = true;
 
 while (runProgram)
 {
-    Console.WriteLine("Enter some text");
-    string text = Console.ReadLine();
-    char [] reversed = text.Reverse().ToArray();
-    string reversedText = "";
-    foreach(char c in reversed)
+    int[] arr = { 2, 8, 0, 24, 51 };
+    Console.WriteLine("Enter a number");
+    int num = int.Parse(Console.ReadLine());
+    if (num > arr.Length || num < 0)
     {
-        reversedText += c;
+        Console.WriteLine("Not A valid index");
     }
-    Console.WriteLine(reversedText);
+    else
+    {
+        Console.WriteLine($"the value at index {num} is {arr[num]}");
+    }
+
     while (true)
     {
         Console.WriteLine("Would you like to continue? (y/n)");
