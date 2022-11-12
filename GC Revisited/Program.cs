@@ -1038,42 +1038,102 @@
 
 //exercise 33
 
+//bool runProgram = true;
+//int[] arr = { 2, 8, 0, 24, 51 };
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Enter an index number");
+//    int num = int.Parse(Console.ReadLine());
+//    int index = Array.IndexOf(arr, num);
+//    if (num > arr.Length || num < 0)
+//    {
+//        Console.WriteLine("Index not available");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"The value at index {num} is {arr[num]}. Would you like to change it? y/n");
+//        while (true)
+//        {
+//            string response = Console.ReadLine().Trim().ToLower();
+//            if (response == "y")
+//            {
+//                Console.WriteLine($"Please enter a new value for index {num}");
+//                int newValue = int.Parse(Console.ReadLine());
+//                arr[num] = newValue;
+//                Console.WriteLine($"The value at index {num} is now {arr[num]}");
+//                break;
+//            }
+//            else if (response == "n")
+//            {
+//                break;
+//            }
+//            else
+//            {
+//                Console.WriteLine("Please enter y/n");
+//            }
+//        }
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
+
+// exercise 34
+
 bool runProgram = true;
-int[] arr = { 2, 8, 0, 24, 51 };
+double[] arr = { 16, 32, 64, 128, 256 };
 
 while (runProgram)
 {
-    Console.WriteLine("Enter an index number");
-    int num = int.Parse(Console.ReadLine());
-    int index = Array.IndexOf(arr, num);
-    if (num > arr.Length || num < 0)
+    string arrContent = "";
+
+    Console.WriteLine("Please enter a command (half/double)");
+
+    while (true)
     {
-        Console.WriteLine("Index not available");
-    }
-    else
-    {
-        Console.WriteLine($"The value at index {num} is {arr[num]}. Would you like to change it? y/n");
-        while (true)
+        string choice = Console.ReadLine().ToLower().Trim();
+        if (choice == "double")
         {
-            string response = Console.ReadLine().Trim().ToLower();
-            if (response == "y")
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine($"Please enter a new value for index {num}");
-                int newValue = int.Parse(Console.ReadLine());
-                arr[num] = newValue;
-                Console.WriteLine($"The value at index {num} is now {arr[num]}");
-                break;
+                arr[i] *= 2;
+                arrContent += arr[i].ToString() + ", ";
             }
-            else if (response == "n")
+            break;
+        }
+        else if (choice == "half")
+        {
+            for (int i = 0; i < arr.Length; i++)
             {
-                break;
+                arr[i] /= 2;
+                arrContent += arr[i].ToString() + ", ";
             }
-            else
-            {
-                Console.WriteLine("Please enter y/n");
-            }
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Please enter (double/half)");
         }
     }
+    
+    Console.WriteLine($"The array now conatins: {arrContent.Trim()}");
+
     while (true)
     {
         Console.WriteLine("Would you like to continue? (y/n)");
@@ -1092,4 +1152,5 @@ while (runProgram)
             Console.WriteLine("Please enter y/n");
         }
     }
+
 }
