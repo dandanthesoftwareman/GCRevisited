@@ -888,3 +888,73 @@
 //        }
 //    }
 //}
+
+//exercise 29 I'M COMING BACK TO THIS ONE
+
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+//    Console.WriteLine("Enter some text");
+//    string text = Console.ReadLine();
+//    string[] words = text.Split(' ').ToArray();
+//    for(int i = 0; i < words.Length; i++)
+//    {
+//        if ((words[i].StartsWith("a") || words[i].StartsWith("e") || words[i].StartsWith("i") || words[i].StartsWith("o") || words[i].StartsWith("u")) && )
+//        words[i] = words[i].Replace("a", "").Replace("e", "").Replace("i", "").Replace("o", "").Replace("u", "").Replace("A", "").Replace("E", "").Replace("I", "").Replace("O", "").Replace("U", ""); ;
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
+
+//exercise 30
+
+bool runProgram = true;
+
+while (runProgram)
+{
+    Console.WriteLine("Enter some text");
+    string text = Console.ReadLine();
+    char [] reversed = text.Reverse().ToArray();
+    string reversedText = "";
+    foreach(char c in reversed)
+    {
+        reversedText += c;
+    }
+    Console.WriteLine(reversedText);
+    while (true)
+    {
+        Console.WriteLine("Would you like to continue? (y/n)");
+        string response = Console.ReadLine().Trim().ToLower();
+        if (response == "y")
+        {
+            break;
+        }
+        else if (response == "n")
+        {
+            runProgram = false;
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Please enter y/n");
+        }
+    }
+}
