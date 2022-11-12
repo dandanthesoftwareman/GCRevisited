@@ -961,38 +961,77 @@
 
 //exercise 31
 
-bool runProgram = true;
+//bool runProgram = true;
 
-while (runProgram)
-{
-    int[] arr = { 2, 8, 0, 24, 51 };
-    Console.WriteLine("Enter a number");
-    int num = int.Parse(Console.ReadLine());
-    if (num > arr.Length || num < 0)
-    {
-        Console.WriteLine("Not A valid index");
-    }
-    else
-    {
-        Console.WriteLine($"the value at index {num} is {arr[num]}");
-    }
+//while (runProgram)
+//{
+//    int[] arr = { 2, 8, 0, 24, 51 };
+//    Console.WriteLine("Enter an array index");
+//    int num = int.Parse(Console.ReadLine());
+//    if (num > arr.Length || num < 0)
+//    {
+//        Console.WriteLine("Not A valid index");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"the value at index {num} is {arr[num]}");
+//    }
 
-    while (true)
-    {
-        Console.WriteLine("Would you like to continue? (y/n)");
-        string response = Console.ReadLine().Trim().ToLower();
-        if (response == "y")
-        {
-            break;
-        }
-        else if (response == "n")
-        {
-            runProgram = false;
-            break;
-        }
-        else
-        {
-            Console.WriteLine("Please enter y/n");
-        }
-    }
-}
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
+
+// exercise 32
+
+//bool runProgram = true;
+
+//while (runProgram)
+//{
+//    int[] arr = { 2, 8, 0, 24, 51 };
+//    Console.WriteLine("Enter number");
+//    int num = int.Parse(Console.ReadLine());
+//    int index = Array.IndexOf(arr, num);
+//    if (!arr.Contains(num))
+//    {
+//        Console.WriteLine("Value could not be found in the array");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"the value {num} is {index}");
+//    }
+
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
