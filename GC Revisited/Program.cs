@@ -1096,44 +1096,124 @@
 
 // exercise 34
 
+//bool runProgram = true;
+//double[] arr = { 16, 32, 64, 128, 256 };
+
+//while (runProgram)
+//{
+//    string arrContent = "";
+
+//    Console.WriteLine("Please enter a command (half/double)");
+
+//    while (true)
+//    {
+//        string choice = Console.ReadLine().ToLower().Trim();
+//        if (choice == "double")
+//        {
+//            for (int i = 0; i < arr.Length; i++)
+//            {
+//                arr[i] *= 2;
+//                arrContent += arr[i].ToString() + ", ";
+//            }
+//            break;
+//        }
+//        else if (choice == "half")
+//        {
+//            for (int i = 0; i < arr.Length; i++)
+//            {
+//                arr[i] /= 2;
+//                arrContent += arr[i].ToString() + ", ";
+//            }
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter (double/half)");
+//        }
+//    }
+
+//    Console.WriteLine($"The array now conatins: {arrContent.Trim()}");
+
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+
+//}
+
+// exercise 35
+
+//bool runProgram = true;
+//string[] animals = { "cow", "elephant", "jaguar", "horse", "crow" };
+
+//while (runProgram)
+//{
+//    Console.WriteLine("Please enter two space-seperated whole numbers (ex 1 3)");
+//    string entry = Console.ReadLine();
+//    int[] nums = entry.Split(' ').Select(x => int.Parse(x)).ToArray();
+//    if(nums[0] > animals.Length || nums[0] < 0 || nums[1] > animals[nums[0]].Length || nums[1] < 0)
+//    {
+//        Console.WriteLine("Invalid Indices");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"The value at index {nums[0]} is {animals[nums[0]]}. The letter at index {nums[1]} is {animals[nums[0]][nums[1]]}");
+//    }
+//    while (true)
+//    {
+//        Console.WriteLine("Would you like to continue? (y/n)");
+//        string response = Console.ReadLine().Trim().ToLower();
+//        if (response == "y")
+//        {
+//            break;
+//        }
+//        else if (response == "n")
+//        {
+//            runProgram = false;
+//            break;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter y/n");
+//        }
+//    }
+//}
+
+
 bool runProgram = true;
-double[] arr = { 16, 32, 64, 128, 256 };
+string[] animals = { "cow", "elephant", "jaguar", "horse", "crow" };
 
 while (runProgram)
 {
-    string arrContent = "";
-
-    Console.WriteLine("Please enter a command (half/double)");
-
-    while (true)
-    {
-        string choice = Console.ReadLine().ToLower().Trim();
-        if (choice == "double")
-        {
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] *= 2;
-                arrContent += arr[i].ToString() + ", ";
-            }
-            break;
-        }
-        else if (choice == "half")
-        {
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] /= 2;
-                arrContent += arr[i].ToString() + ", ";
-            }
-            break;
-        }
-        else
-        {
-            Console.WriteLine("Please enter (double/half)");
-        }
-    }
+    Console.WriteLine("Please enter two space-seperated whole numbers (ex 1 3)");
+    string entry = Console.ReadLine();
+    int[] nums = entry.Split(' ').Select(x => int.Parse(x)).ToArray();
+    int animalsIndex = nums[0];
+    string theAnimal = animals[animalsIndex];
     
-    Console.WriteLine($"The array now conatins: {arrContent.Trim()}");
-
+    if (animalsIndex > animals.Length || animalsIndex < 0 ||
+        nums[1] > animals[animalsIndex].Length || nums[1] < 0)
+    {
+        Console.WriteLine("Invalid Indices");
+    }
+    else
+    {
+        Console.WriteLine($"The value at index {nums[0]} is {animals[animalsIndex]}. The letter at index {nums[1]} is {animals[animalsIndex][nums[1]]}");
+    }
     while (true)
     {
         Console.WriteLine("Would you like to continue? (y/n)");
@@ -1152,5 +1232,4 @@ while (runProgram)
             Console.WriteLine("Please enter y/n");
         }
     }
-
 }
